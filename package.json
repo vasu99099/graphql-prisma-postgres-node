@@ -1,0 +1,42 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "dotenv -e env-files/.env.local -- tsc-watch --onSuccess \" npm start\"",
+    "prod": "dotenv -e env-files/.env.prod -- tsc-watch --onSuccess \" npm start\"",
+    "stag": "dotenv -e env-files/.env.stag -- tsc-watch --onSuccess \" npm start\"",
+    "test": "dotenv -e env-files/.env.test -- tsc-watch --onSuccess \" npm start\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write ./src"
+  },
+  "keywords": [],
+  "author": "vasu bhimani",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.6",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "prisma": "^5.8.1",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "@prisma/client": "^5.8.1",
+    "@types/jsonwebtoken": "^9.0.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "dotenv-cli": "^7.3.0",
+    "express": "^4.18.2",
+    "joi": "^17.12.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
