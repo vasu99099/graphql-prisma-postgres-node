@@ -19,6 +19,9 @@ Before running this application, ensure you have the following installed:
     |   |-- .env.stage
     |   |-- .env.prod
     |   |-- .sample.env
+    prisma
+    |   |-- migrations
+    |   |-- schema.prisma
     src
     |-- controller
     |   |-- thread.controller.ts
