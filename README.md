@@ -113,7 +113,7 @@ Create a `env-files/.env.local` file in the project root and define these variab
 4. **Docker Composer up:**
 
    ```bash
-   docker-compose up -d
+   docker-compose --env-file env-files/.env.local up -d
    ```
 
 
